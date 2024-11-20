@@ -1,0 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    flex: 1 1 100%; /* Cards will take full width on smaller screens */
+  }
+}

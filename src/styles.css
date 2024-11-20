@@ -1,0 +1,258 @@
+/* Style du filtre par catégorie */
+.category-filter {
+    margin-bottom: 20px;
+  }
+  
+  .category-filter h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .category-filter label {
+    margin-right: 10px;
+  }
+  
+  /* Style pour le sélecteur de nombre de films par page */
+  .page-size-selector {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page-size-selector label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .page-size-selector select {
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style de la grille de cartes de films */
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  
+  .gauge {
+    background: #e9ecef;
+    border-radius: 8px;
+    height: 8px;
+    margin: 8px 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .gauge .likes {
+    background: #28a745;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggle-button.liked {
+    background-color: #28a745;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .toggle-button.liked:hover {
+    background-color: #218838;
+  }
+  /* filter */
+  .filter {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Aligne le titre et le filtre dans une colonne */
+    align-items: center; /* Centre horizontalement */
+  }
+  
+  .filter h4 {
+    margin-bottom: 15px; /* Espace entre le titre et les filtres */
+  }
+  
+  .filter-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les catégories */
+    gap: 10px; /* Espace entre les colonnes */
+  }
+  
+  .filter label {
+    display: flex;
+    align-items: center; /* Aligne le texte avec la case à cocher */
+    cursor: pointer;
+    text-align: left; /* Aligne le texte à gauche */
+  }
+  
+  .filter input {
+    margin-right: 5px; /* Espace entre la case à cocher et le texte */
+  }
+  
+  /*****/
+  
+  .movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+/********* pagination ***********/
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+    
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-evenly;
+  }
+  
+  .pagination-controls button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .pagination-controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-controls select {
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .pagination-controls label {
+    margin-right: 10px;
+  }
+
+  .items-per-page{
+    padding-left: 70px;
+  }
+
+  /********************/
+  
+  .prev-next-button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  .pagination .active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+
+
+
+  /********************/
+  .movie-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+  }
+  
+  .gauge {
+    display: flex;
+    height: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .likes {
+    background-color: green;
+  }
+  
+  .dislikes {
+    background-color: red;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
